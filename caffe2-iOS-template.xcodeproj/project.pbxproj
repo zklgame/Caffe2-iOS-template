@@ -1,0 +1,437 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6E9E5EBF1ED571C50036818E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9E5EBE1ED571C50036818E /* AppDelegate.swift */; };
+		6E9E5EC11ED571C50036818E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9E5EC01ED571C50036818E /* ViewController.swift */; };
+		6E9E5EC41ED571C50036818E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E9E5EC21ED571C50036818E /* Main.storyboard */; };
+		6E9E5EC61ED571C50036818E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E9E5EC51ED571C50036818E /* Assets.xcassets */; };
+		6E9E5EC91ED571C50036818E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E9E5EC71ED571C50036818E /* LaunchScreen.storyboard */; };
+		6E9E5ED31ED571DE0036818E /* libCAFFE2_NNPACK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E9E5ED01ED571DE0036818E /* libCAFFE2_NNPACK.a */; };
+		6E9E5ED41ED571DE0036818E /* libCAFFE2_PTHREADPOOL.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E9E5ED11ED571DE0036818E /* libCAFFE2_PTHREADPOOL.a */; };
+		6E9E5ED51ED571DE0036818E /* libprotobuf.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E9E5ED21ED571DE0036818E /* libprotobuf.a */; };
+		6E9E5ED71ED571EA0036818E /* libCaffe2_CPU.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E9E5ED61ED571EA0036818E /* libCaffe2_CPU.a */; };
+		6E9E5EDA1ED571FD0036818E /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E9E5ED91ED571FD0036818E /* opencv2.framework */; };
+		6E9E5EDF1ED574D90036818E /* Caffe2.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6E9E5EDE1ED574D90036818E /* Caffe2.mm */; };
+		6E9E5EE31ED574FC0036818E /* Prediction.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6E9E5EE21ED574FC0036818E /* Prediction.mm */; };
+		6E9E5EE51ED5771B0036818E /* imagenet_classes.json in Resources */ = {isa = PBXBuildFile; fileRef = 6E9E5EE41ED5771B0036818E /* imagenet_classes.json */; };
+		6E9E5EE81ED579EB0036818E /* UIImage+OpenCV.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6E9E5EE71ED579EB0036818E /* UIImage+OpenCV.mm */; };
+		6E9E5EEB1ED583430036818E /* squeezeNetInit.pb in Resources */ = {isa = PBXBuildFile; fileRef = 6E9E5EE91ED583430036818E /* squeezeNetInit.pb */; };
+		6E9E5EEC1ED583430036818E /* squeezeNetPredict.pb in Resources */ = {isa = PBXBuildFile; fileRef = 6E9E5EEA1ED583430036818E /* squeezeNetPredict.pb */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6E9E5EBB1ED571C50036818E /* caffe2-iOS-template.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "caffe2-iOS-template.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E9E5EBE1ED571C50036818E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6E9E5EC01ED571C50036818E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6E9E5EC31ED571C50036818E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6E9E5EC51ED571C50036818E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6E9E5EC81ED571C50036818E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6E9E5ECA1ED571C50036818E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E9E5ED01ED571DE0036818E /* libCAFFE2_NNPACK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libCAFFE2_NNPACK.a; sourceTree = "<group>"; };
+		6E9E5ED11ED571DE0036818E /* libCAFFE2_PTHREADPOOL.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libCAFFE2_PTHREADPOOL.a; sourceTree = "<group>"; };
+		6E9E5ED21ED571DE0036818E /* libprotobuf.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libprotobuf.a; sourceTree = "<group>"; };
+		6E9E5ED61ED571EA0036818E /* libCaffe2_CPU.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libCaffe2_CPU.a; sourceTree = "<group>"; };
+		6E9E5ED91ED571FD0036818E /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
+		6E9E5EDB1ED572080036818E /* Prefix.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prefix.h; sourceTree = "<group>"; };
+		6E9E5EDD1ED574D90036818E /* caffe2-iOS-template-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "caffe2-iOS-template-Bridging-Header.h"; sourceTree = "<group>"; };
+		6E9E5EDE1ED574D90036818E /* Caffe2.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Caffe2.mm; sourceTree = "<group>"; };
+		6E9E5EE01ED574E30036818E /* Caffe2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Caffe2.h; sourceTree = "<group>"; };
+		6E9E5EE11ED574F40036818E /* Prediction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prediction.h; sourceTree = "<group>"; };
+		6E9E5EE21ED574FC0036818E /* Prediction.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Prediction.mm; sourceTree = "<group>"; };
+		6E9E5EE41ED5771B0036818E /* imagenet_classes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = imagenet_classes.json; sourceTree = "<group>"; };
+		6E9E5EE61ED579EB0036818E /* UIImage+OpenCV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+OpenCV.h"; sourceTree = "<group>"; };
+		6E9E5EE71ED579EB0036818E /* UIImage+OpenCV.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "UIImage+OpenCV.mm"; sourceTree = "<group>"; };
+		6E9E5EE91ED583430036818E /* squeezeNetInit.pb */ = {isa = PBXFileReference; lastKnownFileType = file; path = squeezeNetInit.pb; sourceTree = "<group>"; };
+		6E9E5EEA1ED583430036818E /* squeezeNetPredict.pb */ = {isa = PBXFileReference; lastKnownFileType = file; path = squeezeNetPredict.pb; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6E9E5EB81ED571C50036818E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E9E5ED31ED571DE0036818E /* libCAFFE2_NNPACK.a in Frameworks */,
+				6E9E5ED51ED571DE0036818E /* libprotobuf.a in Frameworks */,
+				6E9E5ED41ED571DE0036818E /* libCAFFE2_PTHREADPOOL.a in Frameworks */,
+				6E9E5EDA1ED571FD0036818E /* opencv2.framework in Frameworks */,
+				6E9E5ED71ED571EA0036818E /* libCaffe2_CPU.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6E9E5EB21ED571C50036818E = {
+			isa = PBXGroup;
+			children = (
+				6E9E5EBD1ED571C50036818E /* caffe2-iOS-template */,
+				6E9E5EBC1ED571C50036818E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6E9E5EBC1ED571C50036818E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6E9E5EBB1ED571C50036818E /* caffe2-iOS-template.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6E9E5EBD1ED571C50036818E /* caffe2-iOS-template */ = {
+			isa = PBXGroup;
+			children = (
+				6E9E5EE41ED5771B0036818E /* imagenet_classes.json */,
+				6E9E5ED91ED571FD0036818E /* opencv2.framework */,
+				6E9E5ED81ED571EF0036818E /* caffe2 */,
+				6E9E5EDC1ED574B10036818E /* wrappers */,
+				6E9E5EED1ED5834F0036818E /* models */,
+				6E9E5EBE1ED571C50036818E /* AppDelegate.swift */,
+				6E9E5EC01ED571C50036818E /* ViewController.swift */,
+				6E9E5EC21ED571C50036818E /* Main.storyboard */,
+				6E9E5EC51ED571C50036818E /* Assets.xcassets */,
+				6E9E5EC71ED571C50036818E /* LaunchScreen.storyboard */,
+				6E9E5ECA1ED571C50036818E /* Info.plist */,
+			);
+			path = "caffe2-iOS-template";
+			sourceTree = "<group>";
+		};
+		6E9E5ED81ED571EF0036818E /* caffe2 */ = {
+			isa = PBXGroup;
+			children = (
+				6E9E5ED61ED571EA0036818E /* libCaffe2_CPU.a */,
+				6E9E5ED01ED571DE0036818E /* libCAFFE2_NNPACK.a */,
+				6E9E5ED11ED571DE0036818E /* libCAFFE2_PTHREADPOOL.a */,
+				6E9E5ED21ED571DE0036818E /* libprotobuf.a */,
+			);
+			name = caffe2;
+			sourceTree = "<group>";
+		};
+		6E9E5EDC1ED574B10036818E /* wrappers */ = {
+			isa = PBXGroup;
+			children = (
+				6E9E5EDB1ED572080036818E /* Prefix.h */,
+				6E9E5EE01ED574E30036818E /* Caffe2.h */,
+				6E9E5EDE1ED574D90036818E /* Caffe2.mm */,
+				6E9E5EE11ED574F40036818E /* Prediction.h */,
+				6E9E5EE21ED574FC0036818E /* Prediction.mm */,
+				6E9E5EE61ED579EB0036818E /* UIImage+OpenCV.h */,
+				6E9E5EE71ED579EB0036818E /* UIImage+OpenCV.mm */,
+				6E9E5EDD1ED574D90036818E /* caffe2-iOS-template-Bridging-Header.h */,
+			);
+			name = wrappers;
+			sourceTree = "<group>";
+		};
+		6E9E5EED1ED5834F0036818E /* models */ = {
+			isa = PBXGroup;
+			children = (
+				6E9E5EE91ED583430036818E /* squeezeNetInit.pb */,
+				6E9E5EEA1ED583430036818E /* squeezeNetPredict.pb */,
+			);
+			name = models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6E9E5EBA1ED571C50036818E /* caffe2-iOS-template */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E9E5ECD1ED571C50036818E /* Build configuration list for PBXNativeTarget "caffe2-iOS-template" */;
+			buildPhases = (
+				6E9E5EB71ED571C50036818E /* Sources */,
+				6E9E5EB81ED571C50036818E /* Frameworks */,
+				6E9E5EB91ED571C50036818E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "caffe2-iOS-template";
+			productName = "caffe2-iOS-template";
+			productReference = 6E9E5EBB1ED571C50036818E /* caffe2-iOS-template.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6E9E5EB31ED571C50036818E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Kaili Zhu";
+				TargetAttributes = {
+					6E9E5EBA1ED571C50036818E = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 7A86XN487K;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 6E9E5EB61ED571C50036818E /* Build configuration list for PBXProject "caffe2-iOS-template" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6E9E5EB21ED571C50036818E;
+			productRefGroup = 6E9E5EBC1ED571C50036818E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6E9E5EBA1ED571C50036818E /* caffe2-iOS-template */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6E9E5EB91ED571C50036818E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E9E5EEC1ED583430036818E /* squeezeNetPredict.pb in Resources */,
+				6E9E5EE51ED5771B0036818E /* imagenet_classes.json in Resources */,
+				6E9E5EEB1ED583430036818E /* squeezeNetInit.pb in Resources */,
+				6E9E5EC91ED571C50036818E /* LaunchScreen.storyboard in Resources */,
+				6E9E5EC61ED571C50036818E /* Assets.xcassets in Resources */,
+				6E9E5EC41ED571C50036818E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6E9E5EB71ED571C50036818E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E9E5EE31ED574FC0036818E /* Prediction.mm in Sources */,
+				6E9E5EE81ED579EB0036818E /* UIImage+OpenCV.mm in Sources */,
+				6E9E5EC11ED571C50036818E /* ViewController.swift in Sources */,
+				6E9E5EBF1ED571C50036818E /* AppDelegate.swift in Sources */,
+				6E9E5EDF1ED574D90036818E /* Caffe2.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6E9E5EC21ED571C50036818E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6E9E5EC31ED571C50036818E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6E9E5EC71ED571C50036818E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6E9E5EC81ED571C50036818E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6E9E5ECB1ED571C50036818E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREFIX_HEADER = "caffe2-iOS-template/Prefix.h";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-force_load",
+					"caffe2-ios-template/libCaffe2_CPU.a",
+				);
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6E9E5ECC1ED571C50036818E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "caffe2-iOS-template/Prefix.h";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-force_load",
+					"caffe2-ios-template/libCaffe2_CPU.a",
+				);
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6E9E5ECE1ED571C50036818E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 7A86XN487K;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/caffe2-iOS-template",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../caffe2",
+					"$(SRCROOT)/../caffe2/build_ios",
+					"$(SRCROOT)/../caffe2/build_host_protoc/include",
+					"$(SRCROOT)/../caffe2/third_party/eigen",
+				);
+				INFOPLIST_FILE = "caffe2-iOS-template/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/caffe2-iOS-template",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Kaili-Zhu.caffe2-iOS-template";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "caffe2-iOS-template/caffe2-iOS-template-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		6E9E5ECF1ED571C50036818E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 7A86XN487K;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/caffe2-iOS-template",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../caffe2",
+					"$(SRCROOT)/../caffe2/build_ios",
+					"$(SRCROOT)/../caffe2/build_host_protoc/include",
+					"$(SRCROOT)/../caffe2/third_party/eigen",
+				);
+				INFOPLIST_FILE = "caffe2-iOS-template/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/caffe2-iOS-template",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Kaili-Zhu.caffe2-iOS-template";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "caffe2-iOS-template/caffe2-iOS-template-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6E9E5EB61ED571C50036818E /* Build configuration list for PBXProject "caffe2-iOS-template" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E9E5ECB1ED571C50036818E /* Debug */,
+				6E9E5ECC1ED571C50036818E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E9E5ECD1ED571C50036818E /* Build configuration list for PBXNativeTarget "caffe2-iOS-template" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E9E5ECE1ED571C50036818E /* Debug */,
+				6E9E5ECF1ED571C50036818E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6E9E5EB31ED571C50036818E /* Project object */;
+}
